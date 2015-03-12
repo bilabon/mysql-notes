@@ -19,10 +19,15 @@ SELECT lesson_date, room
 	WHERE teacher = 1
 	ORDER BY lesson_date DESC;
 	
--- Уникальные записи
+-- Уникальные записи (DISTINCT - удаляет дубликаты с выдачи)
 SELECT DISTINCT room FROM lessons;
 -- Поумолчанию
 SELECT ALL room FROM lessons;
+
+-- Выборка с пустыми значениями teacher
+SELECT lesson_date, room
+	FROM lessons
+	WHERE teacher is NULL;
 
 SELECT lesson_date, room
 	FROM lessons
