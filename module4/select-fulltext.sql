@@ -11,7 +11,7 @@ CREATE FULLTEXT INDEX ixFullText ON courses1 (title, description);
 SELECT title, length
 	FROM courses1
 	WHERE MATCH (title, description) 
-		AGAINST('some text' IN NATURAL LANGUAGE MODE);
+		AGAINST('искомый текст' IN NATURAL LANGUAGE MODE);
 
 SELECT title, length
 	FROM courses1
