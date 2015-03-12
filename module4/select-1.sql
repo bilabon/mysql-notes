@@ -19,7 +19,8 @@ CREATE TABLE lessons SELECT * FROM course.lessons;
 
 SELECT name AS teacher, phone AS telefon
 	FROM teachers;
-	
+
+-- Предикат(клаузула) ORDER
 SELECT name, phone
 	FROM teachers
 	ORDER BY name;
