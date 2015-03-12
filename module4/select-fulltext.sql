@@ -4,7 +4,7 @@ USE module4;
 -- Таблица с данными
 CREATE TABLE courses1 ENGINE=MyISAM SELECT * FROM course.courses;
 
--- Полнотекстовый ИНДЕКС
+-- Полнотекстовый ИНДЕКС (ixFullText - назвали так индекс/ опционно)
 CREATE FULLTEXT INDEX ixFullText ON courses1 (title, description);
 
 -- Поиск в режиме естественного языка
