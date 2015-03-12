@@ -60,7 +60,8 @@ SELECT lesson_date, room
 SELECT DISTINCT YEAR(lesson_date), MONTH(lesson_date)
 	FROM lessons
 	WHERE teacher IN (1, 3, 5);
-	
+
+-- Добавляем к дате 31 день	
 SELECT DATE_ADD('2008-01-02', INTERVAL 31 DAY);
 
 SELECT DATE_ADD(NOW(), INTERVAL 100 DAY);
