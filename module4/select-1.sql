@@ -25,23 +25,28 @@ SELECT name, phone
 	FROM teachers
 	ORDER BY name;
 	
+-- ASC - в порядке возростания (по умолчанию)
 SELECT name, phone
 	FROM teachers
 	ORDER BY name ASC;
-	
+
+-- DESC - в порядке убывания	
 SELECT name, phone
 	FROM teachers
 	ORDER BY name DESC;
-	
+
+-- ORDER BY 1 - по первой колонке результата (в нашем случае это name)	
 SELECT name, phone
 	FROM teachers
 	ORDER BY 1;
-	
+
+-- LIMIT - лимит вывода записи	
 SELECT name, phone
 	FROM teachers
 	ORDER BY name
 	LIMIT 2;
 
+-- LIMIT 2,3 - лимит вывода записи, с второй три записи	
 SELECT name, phone
 	FROM teachers
 	ORDER BY name
