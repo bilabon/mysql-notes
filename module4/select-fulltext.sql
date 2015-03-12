@@ -22,7 +22,7 @@ SELECT title, length
 SELECT title, length
 	FROM courses1
 	WHERE MATCH (title, description) 
-		AGAINST('-mysql +программирования' IN BOOLEAN MODE);
+		AGAINST('-mysql +программир*' IN BOOLEAN MODE);
 
 -- Поиск в смешанном режиме (сортировка в режиме естественного, фильтрация в логическом)
 -- Логический режим с сортировкой по релевантности
